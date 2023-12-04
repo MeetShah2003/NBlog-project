@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Blog page</title>
+    <link rel="stylesheet" href="../poppins.css">
+</head>
+<body>
+    <%- include("nav") %>
+
+    <section class="blogForm">
+        <form action="/blog/create" method="post" id="blogForm">
+            <input type="text" name="title" id="title" placeholder="Enter Title"><br><br>
+            <input type="text" name="content" id="content" placeholder="Enter Content"><br><br>
+            <input type="text" name="category" id="category" placeholder="Enter Category"><br><br>
+            <input type="url" name="image" id="image" placeholder="Enter Image URL"><br><br>
+            <input type="submit" value="AddBlog" id="addBlog">
+        </form>
+    </section>
+</body>
+</html>

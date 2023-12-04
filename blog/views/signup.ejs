@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../poppins.css">
+</head>
+<body>  
+    <%- include("nav") %>
+
+    <section class="signupForm">
+    <form action="/user/signup" method="post" id="form">
+        <input type="text" name="username" id="username" placeholder="Enter UserName"><br><br>
+        <input type="password" name="password" id="password" placeholder="Enter Password"><br><br>
+        <input type="email" name="email" id="email" placeholder="Enter EmailID"><br><br>
+        <select name="role" id="role">
+            <option value="user" class="opt">user</option>
+            <option value="admin" class="opt">admin</option>
+        </select><br><br>
+        <input type="submit" value="Signup" id="signup">
+    </section>
+    </form>
+</body>
+</html>
