@@ -6,11 +6,28 @@
     <title>Home page</title>
     <link rel="stylesheet" href="../poppins.css">
     <link rel="stylesheet" href="../all.min.css">
+    <link rel="stylesheet" href="../index.css">
 </head>
 <body>
     <%- include("nav") %>
 
     <section class="displayblog">
+        <div id="left-box">
+            <div id="filter">
+                Filter By:
+                <a id="technology">Technology</a>
+                <a id="electronic">Electronic</a>
+                <a id="sport">Sport</a>
+                <a id="health">Health</a>
+                <a id="entertainment">Entertainment</a>
+            </div>
+            <div id="search">
+                <form id="search">
+                    <input type="text" name="search" name="search" placeholder="Search Here..">
+                    <input type="submit" value="Search">
+                </form>    
+            </div>
+        </div>
         <div id="parent-box"></div>
     </section>
 </body>

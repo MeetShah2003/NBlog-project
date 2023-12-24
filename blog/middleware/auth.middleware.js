@@ -2,10 +2,8 @@ const { userModel } = require("../models/user.schema");
 
 const isAuth = async (req, res, next) => {
   const { id } = req.cookies;
-  console.log(id);
   if (id) {
     const user = await userModel.findById(id);
-    console.log(user);
     if (user.role == "admin") {
       next();
     }
